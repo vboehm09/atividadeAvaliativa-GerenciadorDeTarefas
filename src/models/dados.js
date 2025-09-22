@@ -45,7 +45,7 @@ let gerenciamentoDeTarefas = [
     "descricao": "Compilar os resultados do Q3 para a reunião semanal.",
     "prioridade": "Alta",
     "status": "Cancelada",
-    "dataVencimento": "2025-09-18",
+    "dataVencimento": "2025-09-27",
     "responsavel": "João Silva",
     "projeto": "Planejamento Estratégico"
     },

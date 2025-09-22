@@ -5,8 +5,26 @@ const getAllTarefas = (req, res) => {
     res.status(200).json({
         total: gerenciamentoDeTarefas.length,
         gerenciamentoDeTarefas: gerenciamentoDeTarefas
+    })        
+}
+
+const getByStatus = (req, res) => {
+    let statu = gerenciamentoDeTarefas.filter(s => s.id === id);
+
+    if (statu) {
+        res.status(200).json({
+            success: true,
+            statu: statu
+        })  
+    }
+
+    res.status(400).json({
+        success: false,
+        message: "Tarefa nao encontrada"
     })
 }
+
+
 
 const getById = (req, res) => {
     let id = parseInt(req.params.id);
@@ -202,4 +220,4 @@ const updateTarefa = (req, res) => {
 
 
 
-export { getAllTarefas, getById, createTarefa, deleteTarefa, updateTarefa };
+export { getAllTarefas, getById, createTarefa, deleteTarefa, updateTarefa, getByStatus };
