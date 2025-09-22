@@ -43,5 +43,6 @@
 
 ## Autor
 
-* **[vboehm09]** - [Link para seu perfil do GitHub]
+* **[vboehm09]**
+
 
